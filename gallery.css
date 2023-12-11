@@ -1,0 +1,6 @@
+.photo img {
+            width: 400px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 310px; /* Set a maximum width if desired */
+            max-height: 210px; /* Set a maximum height if desired */
+}

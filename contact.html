@@ -1,0 +1,69 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.jpeg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Booking</a></li>
+            <li><a href="feedback.html"><i class="fas fa-comment-alt"></i> Feedback</a></li>
+
+            <!-- Add other navigation links as needed -->
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Contact Form</h2>
+        <!-- Your contact form content goes here -->
+        <form action="process_contact.php" method="post">
+            <label for="userName">Your Name:</label>
+            <input type="text" id="userName" name="userName" required>
+
+            <label for="userEmail">Your Email:</label>
+            <input type="email" id="userEmail" name="userEmail" required>
+
+            <label for="userEvent">Event Type:</label>
+            <select id="userEvent" name="userEvent" required>
+                <option value="party">Party</option>
+                <option value="wedding">Wedding</option>
+                <option value="birthday">Birthday</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="userMessage">Your Message:</label>
+            <textarea id="userMessage" name="userMessage" rows="4" required></textarea>
+
+            <label for="userDate">Preferred Date:</label>
+            <input type="date" id="userDate" name="userDate" required>
+
+            <input type="submit" value="Submit">
+        </form>
+        <div id="thanksMessage" style="display: none;">
+            <p>Thank you for contacting us! Here's a comeback quote for you:</p>
+            <blockquote>
+                "Your message has brightened our day!"
+            </blockquote>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Your footer content goes here -->
+    </footer>
+
+    <script defer src="script.js"></script>
+</body>
+</html>

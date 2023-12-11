@@ -1,0 +1,241 @@
+/* style.css */
+body {
+    font-family: 'Forte Regular', sans-serif; /* Change the font family to Roboto */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background color */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* ... (rest of the styles remain the same) ... */
+
+
+nav {
+    background-color: #575;
+    padding: 0.5em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+#gallery img {
+    width: 30%;
+    margin: 1%;
+}
+
+#booking-form {
+    background-color: #f4f4f4;
+    padding: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+input {
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#screenshot-section {
+    background-color: #f4f4f4;
+    width: 102%;
+    padding: 1em;
+    text-align: center;
+    margin-top: 5em;
+}
+
+#screenshot-btn {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#screenshot-btn i {
+    margin-right: 0.5em;
+}
+
+footer {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    padding: 0.5em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+}
+
+a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 2em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+body {
+    font-family: 'Satisfy', serif;
+    margin: 0%;
+    padding: 0em;
+    background: url('backgroud.jpg') center/cover no-repeat;
+    background-color: rgba(252, 219, 201, 1); /* Adjust the alpha value for transparency */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: grid;
+    width: 102%;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-content: center;/* Adjust the alpha value for transparency */
+    color: white;
+    scroll-padding-left: auto;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for transparency */
+    color: white;
+    border-radius: 0px;
+    width: 106%;
+    padding: 0.5em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.80); /* Adjust the alpha value for transparency on hover */
+}
+
+section {
+    padding: 2em;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust the alpha value for transparency */
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.home-section p {
+    font-family: 'Footlight MT Light', serif; /* Different font for h2 in home section */
+}
+
+
+.rounded-logo {
+      border-radius: 10px;
+      width: 80px; /* Adjust the width of the logo */
+      height: 60px;
+      object-fit: cover;
+      /* Adjust the value to control the degree of curvature */
+    }
+
+.tab {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 5px;
+      background-color: around;
+      margin: 5px;
+
+
+      border-radius: 10px;
+    }
+
+
+body {
+    overflow-x: hidden;
+}

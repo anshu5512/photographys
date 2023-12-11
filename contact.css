@@ -1,0 +1,27 @@
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+#thanksMessage {
+    display: none;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #e0f7fa; /* Light background color for the thanks message */
+    border: 1px solid #4fc3f7; /* Border color */
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    color: #0091ea; /* Text color */
+}

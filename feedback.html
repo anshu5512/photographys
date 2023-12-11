@@ -1,0 +1,50 @@
+<!-- feedback.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.jpeg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>Feedback</title>
+</head>
+<body>
+
+    <header>
+        <h1>Feedback</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Booking</a></li>
+            <li><a href="feedback.html"><i class="fas fa-comment-alt"></i> Feedback</a></li>
+
+            <!-- Add other navigation links as needed -->
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Feedback Form</h2>
+        <!-- Your feedback form content goes here -->
+        <form action="process_feedback.php" method="post">
+            <label for="userFeedback">Your Feedback:</label>
+            <textarea id="userFeedback" name="userFeedback" rows="4" required></textarea>
+            <input type="submit" value="Submit Feedback">
+        </form>
+        <div id="thanksMessage" style="display: none;">
+            <p>Thank you for your feedback! Here's a comeback quote for you:</p>
+            <blockquote>
+                "Your feedback is the breakfast of champions!"
+            </blockquote>
+        </div>
+    </section>
+
+    <footer>
+    <!-- Your footer cotent goes here -->
+    </footer>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
