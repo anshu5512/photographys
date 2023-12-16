@@ -70,10 +70,3 @@ function takeScreenshot() {
     });
 }
 
-document.getElementById('screenshotBtn').addEventListener('click', function() {
-    takeScreenshot();
-});
-
-function takeScreenshot() {
-    window.print();
-}
