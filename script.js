@@ -10,19 +10,22 @@ bookingForm.addEventListener('submit', function (event) {
         gsap.to(bookingForm, { opacity: 0, duration: 0.5, onComplete: () => bookingForm.style.display = 'none' });
     });
 
-    const screenshotBtn = document.getElementById('screenshot-btn');
-    const bookNowLink = document.querySelector('nav a');
+document.getElementById('screenshotBtn').addEventListener('click', function() {
+    takeScreenshot();
+});
 
-    gsap.to(screenshotBtn, { scale: 1.1, yoyo: true, repeat: -1, duration: 1 });
+function takeScreenshot() {
+    html2canvas(document.body).then(function(canvas) {
+        // Convert canvas to data URL (JPEG format with quality set to 1)
+        var dataURL = canvas.toDataURL('image/jpeg', 1.0);
 
-    screenshotBtn.addEventListener('click', function () {
-        gsap.to(screenshotBtn, { scale: 1.2, duration: 0.3, yoyo: true, repeat: 1 });
-        html2canvas(document.body).then(function (canvas) {
-            const screenshotImage = document.createElement('img');
-            screenshotImage.src = canvas.toDataURL();
-            screenshotSection.appendChild(screenshotImage);
-        });
+        // Create a link element and trigger a download
+        var link = document.createElement('a');
+        link.href = dataURL;
+        link.download = 'screenshot.jpg';
+        link.click();
     });
+}
 
     gsap.to(bookNowLink, { scale: 1.1, yoyo: true, repeat: -1, duration: 1 });
 
