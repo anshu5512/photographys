@@ -46,9 +46,21 @@ document.getElementById('screenshotBtn').addEventListener('click', function() {
 });
 
 function takeScreenshot() {
-    html2canvas(document.body).then(function(canvas) {
+    // Create a temporary div for the section content
+    var sectionContent = document.getElementById('home-section').cloneNode(true);
+    var tempDiv = document.createElement('div');
+    tempDiv.appendChild(sectionContent);
+
+    // Append the temporary div to the document body
+    document.body.appendChild(tempDiv);
+
+    // Use html2canvas to capture the screenshot of the temporary div
+    html2canvas(tempDiv).then(function(canvas) {
         // Convert canvas to data URL (JPEG format with quality set to 1)
         var dataURL = canvas.toDataURL('image/jpeg', 1.0);
+
+        // Remove the temporary div from the document body
+        document.body.removeChild(tempDiv);
 
         // Create a link element and trigger a download
         var link = document.createElement('a');
@@ -56,4 +68,12 @@ function takeScreenshot() {
         link.download = 'screenshot.jpg';
         link.click();
     });
+}
+
+document.getElementById('screenshotBtn').addEventListener('click', function() {
+    takeScreenshot();
+});
+
+function takeScreenshot() {
+    window.print();
 }
